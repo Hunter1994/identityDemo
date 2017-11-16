@@ -8,7 +8,7 @@ namespace Microsoft.AspNet.Identity
     using System.Threading;
     using System.Threading.Tasks;
 
-    internal static class TaskExtensions
+    public static class TaskExtensions
     {
         public static CultureAwaiter<T> WithCurrentCulture<T>(this Task<T> task)
         {

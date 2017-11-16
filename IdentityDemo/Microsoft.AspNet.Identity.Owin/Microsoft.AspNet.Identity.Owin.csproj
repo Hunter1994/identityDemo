@@ -41,7 +41,7 @@
     <DocumentationFile>bin\Release\Microsoft.AspNet.Identity.Owin.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <DelaySign>true</DelaySign>
@@ -96,17 +96,17 @@
     <Compile Include="SignInStatus.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="35MSSharedLib1024.snk" />
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Microsoft.AspNet.Identity.Core\Microsoft.AspNet.Identity.Core.csproj">
       <Project>{d2f24972-0f56-4c18-bd65-c26a320a0c68}</Project>
       <Name>Microsoft.AspNet.Identity.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="35MSSharedLib1024.snk" />
-    <None Include="app.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
- <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
