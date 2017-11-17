@@ -125,33 +125,6 @@
     <Reference Include="Owin">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin">
-      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Host.SystemWeb">
-      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security">
-      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.Facebook">
-      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.Cookies">
-      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.OAuth">
-      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.Google">
-      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.Twitter">
-      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
-      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.ApplicationInsights">
       <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
     </Reference>
@@ -288,6 +261,42 @@
     <ProjectReference Include="..\Microsoft.AspNet.Identity.Owin\Microsoft.AspNet.Identity.Owin.csproj">
       <Project>{943170eb-f4e7-4a6d-989e-2cf6c681dd89}</Project>
       <Name>Microsoft.AspNet.Identity.Owin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\Microsoft.Owin.Host.SystemWeb\Microsoft.Owin.Host.SystemWeb.csproj">
+      <Project>{9f0c72d8-e43f-4f01-9deb-9e8fe0ae179e}</Project>
+      <Name>Microsoft.Owin.Host.SystemWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\Microsoft.Owin.Security.Cookies\Microsoft.Owin.Security.Cookies.csproj">
+      <Project>{2fb9342f-ca85-4903-8667-45ed64ad25a6}</Project>
+      <Name>Microsoft.Owin.Security.Cookies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\Microsoft.Owin.Security.Facebook\Microsoft.Owin.Security.Facebook.csproj">
+      <Project>{f6f1d34f-3af6-41dd-b493-60899f959bba}</Project>
+      <Name>Microsoft.Owin.Security.Facebook</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\Microsoft.Owin.Security.Google\Microsoft.Owin.Security.Google.csproj">
+      <Project>{1f46bc62-a011-4b63-a5c6-51aee2ef538d}</Project>
+      <Name>Microsoft.Owin.Security.Google</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\Microsoft.Owin.Security.MicrosoftAccount\Microsoft.Owin.Security.MicrosoftAccount.csproj">
+      <Project>{52f6930f-fbc0-404b-b135-6b6756f5713a}</Project>
+      <Name>Microsoft.Owin.Security.MicrosoftAccount</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\Microsoft.Owin.Security.OAuth\Microsoft.Owin.Security.OAuth.csproj">
+      <Project>{f71e48d0-115a-4105-b332-fccb2139dc23}</Project>
+      <Name>Microsoft.Owin.Security.OAuth</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\Microsoft.Owin.Security.Twitter\Microsoft.Owin.Security.Twitter.csproj">
+      <Project>{bbb663cb-e6a2-4e23-83c9-9c8f52325f44}</Project>
+      <Name>Microsoft.Owin.Security.Twitter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\Microsoft.Owin.Security\Microsoft.Owin.Security.csproj">
+      <Project>{aaaf8157-1e33-4d6c-8319-3b304d018005}</Project>
+      <Name>Microsoft.Owin.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\Microsoft.Owin\Microsoft.Owin.csproj">
+      <Project>{0db69cae-b0bc-4688-9467-66b4c1023d3f}</Project>
+      <Name>Microsoft.Owin</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
