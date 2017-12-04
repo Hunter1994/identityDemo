@@ -1,0 +1,15 @@
+﻿@model CustomDemo.Models.RegisterModel
+@{
+    ViewBag.Title = "Register";
+}
+<h2>Register</h2>
+@using (Html.BeginForm("Register","Home"))
+{
+    @Html.TextBoxFor(r=>r.UserName)
+    <br />
+    @Html.TextBoxFor(r => r.Password)
+    <br />
+    @Html.TextBoxFor(r => r.ConfirmPasswod)
+    <br />
+    <input type="submit" value="注册" />
+}

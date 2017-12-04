@@ -1,0 +1,22 @@
+﻿@using System.Security.Claims;
+@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Home Page";
+}
+@if (Request.IsAuthenticated)
+{
+    @User.Identity.Name
+    <br />
+    using(Html.BeginForm("Out","home"))
+    {
+        <input type="submit" value="注销" />
+    }
+
+    @Html.Partial("Claims", (IEnumerable<Claim>)ViewBag.Claims);
+}
+else
+{
+    @Html.Partial("Login", new CustomDemo.Models.RegisterModel())
+    @Html.Partial("Register",new CustomDemo.Models.RegisterModel())
+}
+

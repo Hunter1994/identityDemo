@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Owin.Security.Twi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Loader", "src\Owin.Loader\Owin.Loader.csproj", "{DF967ED4-C320-421C-859C-81034EFF615E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDemo", "CustomDemo\CustomDemo.csproj", "{923EBB5C-2582-4011-B4C0-7F473C359393}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{DF967ED4-C320-421C-859C-81034EFF615E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF967ED4-C320-421C-859C-81034EFF615E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF967ED4-C320-421C-859C-81034EFF615E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{923EBB5C-2582-4011-B4C0-7F473C359393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{923EBB5C-2582-4011-B4C0-7F473C359393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{923EBB5C-2582-4011-B4C0-7F473C359393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{923EBB5C-2582-4011-B4C0-7F473C359393}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
